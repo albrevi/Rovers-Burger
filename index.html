@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rovers</title>
-    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>   
     <header>
@@ -12,75 +12,86 @@
                 <ul class="info">
                     <li>
                         <i class="fa-solid fa-envelope" style="color: #fa573a;"></i>
-                        rover@gmail.com</li>
+                        <a href="">rover@gmail.com</a></li>
                     <li>
                         <i class="fa-solid fa-phone-flip" style="color:#fa573a;"></i>
-                        91 555 66 77</li>
+                    <a href=""> 91 555 66 77</a></li>
                     <li>
-                        <i class="fa-solid fa-cart-shopping" style="color:#fa573a ;"></i>
-                        Carrito Compra</li>
+                        <i class="fa-solid fa-cart-shopping" style="color:#fa573a;"></i><a href="">Carrito Compra</a></li>
                     <li>
                         <i class="fa-solid fa-circle-user" style="color:#fa573a ;"></i>
-                        Usuario</li>
+                    <a href=""> Usuario</a></li>
                 </ul> 
             </div>
-            <div class="logo">
-                <img src="./recursos tarea/images/logo.jpg" alt="Rovers' logo">
-            </div>
-                <nav>
-                    <ul class="navegation">
-                        <li>Inicio</li>
-                        <li>Menú</li>
-                        <li>Blog</li>
-                        <li>Equipo</li>
+            <div class="header-container">
+                <img class="logo" src="./recursos_tarea/images/logo.jpg" alt="Rovers' logo">
+                <input type="checkbox" id="menu-toggle" />
+                <label for="menu-toggle" class="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <nav class="main-nav">
+                    <ul class="menu">
+                        <li><a href="">Inicio</a></li>
+                        <li><a href="">Menú</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Equipo</a></li>
                     </ul>
                 </nav>
+            </div>
     </header>
     <main>
         <section class="hero">
-            <h1>Las mejores hamburguesas del mundo</h1>
-            <h2>Bienvenido a nuestra hamburguesería</h2>
-            <h3>Come a partir de 15€</h3>
-            <button>Nuestra Carta
-                <i class="fa-solid fa-arrow-right"></i>
-            </button>
-            <div class="socials">
-                <a href=""><i class="fa-brands fa-facebook"></i></a>
-                <a href=""><i class="fa-brands fa-twitter"></i></a>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-              </div>
-        </section>
-    </main>
-        <section class="services">
-            <p>Our Services</p>
-            <ol>
-                <li>
-                    1. Carne 100% natural
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, magnam! Similique, reprehenderit! Aspernatur sint animi aliquid vitae esse illo tenetur perspiciatis voluptatem quos consectetur nesciunt sed officiis corrupti non atque tempore, dicta ipsa placeat veniam enim quidem nulla fugit. Facilis corporis iste quam corrupti dolor incidunt adipisci autem ab magnam!</p>
-                    <button>Leer más</button>
-                </li>
-                <li>
-                    2. Cocina moderna
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quos commodi ad aut laboriosam, maxime quo, molestiae alias ipsam, aperiam temporibus cum rem eveniet quia nam. Nostrum quaerat neque quo.</p>
-                    <button>Leer más</button>
-                </li>
-                <li>
-                    3. Servicio Impecable
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, error. Atque perferendis molestiae qui aspernatur dolores fugit nesciunt incidunt expedita tempore corporis dolorum, nihil provident amet modi pariatur ducimus accusamus tenetur autem, rerum facere et.</p>
-                    <button>Leer más</button>
-                </li>
-            </ol>
-        </section>
-        <section>
-            <p>About us</p>
-            <div>
-            <img src="" alt="">
-            <h4>The History</h4>
-            <h5>Our Restaurant</h5>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel nisi reprehenderit nemo cumque adipisci, recusandae, quasi, officia neque earum reiciendis aspernatur sunt tempora. Quisquam earum facere alias reiciendis error officia facilis voluptatum, quidem odio qui doloremque atque corporis ab dolor dicta animi. Dolorum cupiditate neque unde, eum nostrum optio possimus error veniam amet beatae inventore corporis atque, ex magni? Atque?</p>
-            <button>Leer más</button>
+            <div class="hero-bg"></div> 
+            <div class="container">
+                <h1>Las mejores hamburguesas del mundo</h1>
+                <h2>Bienvenido a nuestra hamburguesería</h2>
+                <h3>Come a partir de 15€</h3>
+                <div class = "carta">
+                <button>Nuestra Carta
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                <div class="socials">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                </div>
             </div>
         </section>
-    </div>
+        <section class="services">
+            <div class="container">
+                <p>Our Services</p>
+                    <ol>
+                        <li>
+                            Carne 100% natural
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, magnam! Similique, reprehenderit! Aspernatur sint animi aliquid vitae esse illo tenetur perspiciatis voluptatem quos consectetur nesciunt sed officiis corrupti non atque tempore, dicta ipsa placeat veniam enim quidem nulla fugit. Facilis corporis iste quam corrupti dolor incidunt adipisci autem ab magnam!</p>
+                            <button>Leer más</button>
+                        </li>
+                        <li>
+                            Cocina moderna
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quos commodi ad aut laboriosam, maxime quo, molestiae alias ipsam, aperiam temporibus cum rem eveniet quia nam. Nostrum quaerat neque quo.</p>
+                            <button>Leer más</button>
+                        </li>
+                        <li>
+                            Servicio Impecable
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, error. Atque perferendis molestiae qui aspernatur dolores fugit nesciunt incidunt expedita tempore corporis dolorum, nihil provident amet modi pariatur ducimus accusamus tenetur autem, rerum facere et.</p>
+                            <button>Leer más</button>
+                        </li>
+                    </ol>
+                </div>
+        </section>
+        <section class="about-us">
+            <div class="container">
+                <p>About us</p>
+                <div class="about-content">
+                    <img src="" alt="">
+                    <h4>The History</h4>
+                    <h5>Our Restaurant</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel nisi reprehenderit nemo cumque adipisci, recusandae, quasi, officia neque earum reiciendis aspernatur sunt tempora. Quisquam earum facere alias reiciendis error officia facilis voluptatum, quidem odio qui doloremque atque corporis ab dolor dicta animi. Dolorum cupiditate neque unde, eum nostrum optio possimus error veniam amet beatae inventore corporis atque, ex magni? Atque?</p>
+                    <button>Leer más</button>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
