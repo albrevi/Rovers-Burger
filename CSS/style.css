@@ -1,0 +1,19 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
+@import url(../CSS/reset.css);
+
+
+.top-bar {
+  background-color: #21242E;
+  padding: 1rem 2rem; /* más visible */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.contact {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  color: white;
+  font-weight: bold;
+}
