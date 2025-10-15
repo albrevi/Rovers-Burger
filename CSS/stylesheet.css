@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
+@import url(../CSS/reset.css);
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+
+}
+
+.top-bar {
+    background-color: #21242E;
+    padding: 20px;
+
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1004px;
+    gap: 0px;
+    list-style: none;
+    color: white;
+    text-align: center;
+}
+
+.info li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero h1 {
+    font-family: 'Handlee';
+    font-weight: normal;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 1004px;
+    position: relative;
+
+}
+
+.main-nav .menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin-left: 20px;
+    padding: 0;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #00000079;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.container {
+    max-width: 1004px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container span {
+    color: #fa573a;
+}
+
+.hero {
+    position: relative;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    overflow: hidden;
+
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.493)),
+        url('../recursos_tarea/images/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+    max-width: 1004px;
+}
+
+.hero .container h2 {
+    margin-top: 10px;
+    font-size: medium;
+    font-weight: normal;
+    color: #fa573a;
+}
+
+.hero .container p {
+    margin-top: 10px;
+    font-size: medium;
+    font-weight: normal;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.carta {
+    display: inline-block;
+}
+
+.carta button {
+    background-color: #fa573a;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.socials {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 24px;
+    color: white;
+}
+
+.socials a {
+    color: white;
+    text-decoration: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #00000079;
+    position: absolute;
+    top: 15px;
+    right: 0;
+    z-index: 3;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.services {
+    width: 100%;
+    padding: 2rem 1rem;
+}
+
+.title {
+    text-align: center;
+    font-family: 'Handlee';
+    margin-bottom: 2rem;
+    position: relative;
+    width: fit-content;
+    margin: 0 auto 2rem;
+    padding-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.title::before {
+    content: '';
+    position: absolute;
+    font-family: 'Montserrat';
+    bottom: 8px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #fa573a;
+    z-index: 1;
+}
+
+.title::after {
+    content: 'X';
+    font-family: 'Montserrat';
+    position: absolute;
+    bottom: 9px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    color: #fa573a;
+    font-weight: 700;
+    z-index: 2;
+    padding: 0 5px;
+}
+
+.services-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 10px;
+}
+
+.service-col {
+    padding: 20px;
+    border-left: 1px solid #00000079;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+}
+
+.service-col p {
+    flex-grow: 1;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.icono {
+    margin-bottom: 0.5rem;
+    color: #fa573a;
+    border-color: #fa573a;
+    border-width: 2px;
+    border-style: solid;
+    padding: 10px;
+}
+
+.icono i {
+    font-size: 2rem;
+}
+
+.service-col button {
+    color: #fa573a;
+    border: none;
+    background-color: white;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: auto;
+}
+.about-us {
+    padding: 4rem 1rem;
+}
+
+.about-us .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.about-hist h3 {
+    margin: 10px 0;
+
+}
+
+.about-hist h4 {
+    font-weight: 400;
+    color: #fa573a;
+
+
+}
+
+.about-hist p {
+    padding: 10px 0;
+
+}
+
+.about-hist button {
+    background-color: #fa573a;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.about-img-wrapper {
+    position: relative;
+    max-width: 480px;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    flex-shrink: 0;
+}
+
+.about-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    position: relative;
+    z-index: 2;
+    border-radius: 4px;
+}
+
+.about-img-wrapper::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border: 3px solid #fa573a;
+    transform: rotate(10deg);
+    z-index: 1;
+}
+
+
+@media (max-width: 600px) {
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        text-align: left;
+        width: 100%;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .services-grid {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .service-col {
+        max-width: 100%;
+        border-left: none;
+        border-bottom: 1px solid #00000079;
+        padding: 5px;
+    }
+
+    .service-col button {
+        margin-bottom: 10px;
+        margin-left: 5px;
+        margin-top: 10px;
+    }
+
+    .service-col p {
+        padding: 5px;
+        flex-grow: 0;
+    }
+
+    .info li a {
+        display: none;
+    }
+
+    .logo {
+        margin-right: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+        max-width: 100px;
+        height: auto;
+        order: 1;
+    }
+
+    .hamburger {
+        display: block;
+        position: static;
+        top: auto;
+        right: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+        order: 2;
+    }
+
+    .main-nav {
+        position: static;
+        top: auto;
+        left: auto;
+        width: 100%;
+        z-index: 2;
+        order: 3;
+    }
+
+    .main-nav .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        padding: 10px 0;
+        list-style: none;
+        gap: 15px;
+    }
+
+    .main-nav .menu li {
+        width: 80%;
+        text-align: center;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 5px;
+    }
+
+    .main-nav .menu li:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    .main-nav .menu a {
+        display: block;
+        text-decoration: none;
+        color: #00000079;
+        padding: 5px 0;
+    }
+
+
+    #menu-toggle:checked+.hamburger+.main-nav .menu {
+        display: flex;
+    }
+
+    .about-content {
+        flex-direction: column;
+        padding: 40px 10vw;
+        align-items: center;
+    }
+
+    .about-content img {
+        margin: 0 auto 20px auto;
+    }
+
+
+
+    .about-content::before {
+        display: block;
+        width: 75%;
+        height: 47vw;
+        min-width: 15px;
+        min-height: 15px;
+        top: 5vh;
+        left: 50%;
+        transform: translateX(-50%) rotate(10deg);
+    }
+}
