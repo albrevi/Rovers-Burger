@@ -78,6 +78,9 @@
   margin: 0 auto;
   padding: 0 20px;
 }
+.container span {
+  color: #fa573a;
+}
 
 .hero {
   position: relative;
@@ -115,12 +118,13 @@
 
 .hero .container h2 {
   margin-top: 10px;
+  font-family: 'Handlee';
   font-size: medium;
   font-weight: normal;
   color: #fa573a;
 }
 
-.hero .container h3 {
+.hero .container p {
   margin-top: 10px;
   font-size: medium;
   font-weight: normal;
@@ -173,11 +177,76 @@
   padding: 2rem 1rem;
 }
 
-h4 {
+.services h2 {
   text-align: center;
+  font-family: 'Handlee';
   margin-bottom: 2rem;
+  position: relative;
+  width: fit-content;
+  margin: 0 auto 2rem;
+  padding-bottom: 20px;
+  font-size: 1.5rem;
 }
 
+.services h2::before {
+  content: '';
+  position: absolute;
+  font-family: 'Montserrat';
+  bottom: 8px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #fa573a;
+  z-index: 1;
+}
+
+.services h2::after {
+  content: 'X';
+  font-family: 'Montserrat';
+  position: absolute;
+  bottom: 9px;
+  left: 50%;
+  transform: translate(-50%,50%);
+  color: #fa573a;
+  font-weight: 700;
+  z-index: 2;
+  padding: 0 5px;
+}
+
+.about-us h2 {
+  font-family: 'Handlee';
+  text-align: center;
+  position: relative;
+  width: fit-content;
+  margin: 0 auto 2rem;
+  padding-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.about-us h2::before {
+  content: '';
+  position: absolute;
+  font-family: 'Montserrat';
+  bottom: 8px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #fa573a;
+  z-index: 1;
+}
+
+.about-us h2::after {
+  content: 'X';
+  position: absolute;
+  font-family: 'Montserrat';
+  bottom: 9px;
+  left: 50%;
+  transform: translate(-50%,50%);
+  color: #fa573a;
+  font-weight: 700;
+  z-index: 2;
+  padding: 0 5px;
+}
 .services-grid {
   display: flex;
   justify-content: space-between;
@@ -200,6 +269,7 @@ h4 {
 .service-col p {
   flex-grow: 1; 
   margin-top: 5px;
+  margin-bottom: 10px;
   }
 
 .icono {
@@ -229,7 +299,66 @@ h4 {
 }
 
 
+.about-content {
+  display: flex;
+  margin-bottom: 100px;
+  position:relative;
+}
 
+.about-content::before{
+  content: '' ;
+  position: absolute;
+  z-index: 1;
+  border: 3px solid #fa573a;
+  background: transparent;
+  width: 45%;
+  min-width: 420px;
+  max-height: 500px;
+  aspect-ratio: 440/315; 
+
+  top: 2%; 
+  transform: rotate(12deg);
+
+}
+
+
+.container img {
+  max-width: 450px;
+  width: 100%;
+  height: 100%;
+  margin-right: 30px;
+  padding: 10px;
+  position: relative;
+  z-index: 2;
+  aspect-ratio: 440/322;
+  display: block;
+}
+
+
+.about-hist h3{
+  padding: 10px;
+
+}
+.about-hist h4{
+  padding: 10px;
+  font-weight: 400;
+  color: #fa573a;
+
+
+}
+.about-hist p{
+  padding: 10px;
+
+}
+
+.about-hist button { 
+  background-color: #fa573a;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  font-weight: bold;
+  margin: 10px;
+ }
 
 @media (max-width: 600px) {
   .header-container {
@@ -237,9 +366,10 @@ h4 {
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    position: relative;
     text-align: left;
     width: 100%;
+    flex-wrap: wrap;
+    align-items: flex-start;
   }
 
   .services-grid {
@@ -293,11 +423,12 @@ h4 {
   }
 
   .main-nav {
-    position: absolute;
-    top: 60px;
-    left: 0;
+    position: static;
+    top: auto;
+    left: auto;
     width: 100%;
     z-index: 2;
+    order: 3;
   }
   .main-nav .menu {
     display: none;
@@ -334,4 +465,28 @@ h4 {
   #menu-toggle:checked+.hamburger+.main-nav .menu {
     display: flex;
   }
+
+  .about-content {
+    flex-direction: column;
+    padding: 40px 10vw;
+    align-items: center;
 }
+
+.about-content img {
+    margin: 0 auto 20px auto; 
+}
+
+
+
+.about-content::before {
+  display: block; 
+  width: 75%; 
+  height: 47vw;
+  min-width: 15px; 
+  min-height: 15px;
+  top: 5vh; 
+  left: 50%; 
+  transform: translateX(-50%) rotate(10deg); 
+}
+}
+
